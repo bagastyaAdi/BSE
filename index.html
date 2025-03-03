@@ -9,9 +9,12 @@
   <body>
     <!-- Header Section -->
     <header class="header">
+      <div class="sideBorder">
+        <img src="src/Group 1371.svg " alt="Deskripsi Gambar">
+      </div>
       <div class="logo">
         <!-- <img -->
-         
+        
         <!-- /> -->
         <!-- <span class="year">2025</span> -->
       </div>
@@ -27,6 +30,21 @@
     <!-- Main Content -->
     <main class="main">
       <!-- Hero Section -->
+      <main>
+        <div id="musik" class="musik">
+          <img src="src/Ellipse 98.svg" alt="yourname" class="title-logo" />
+          <audio id="audioPlayer" loop>
+            <source src="src/wwd.mp3juice.blog - Weird Genius - Big Bang (ft. Letty) Official Music Video (320 KBps).mp3" type="audio/mpeg" />
+          </audio>
+          <a
+            href="#"
+            class="button"
+            onclick="document.getElementById('audioPlayer').play()"
+          >
+            <i class="fas fa-play"></i> Music
+          </a>
+        </div>
+  
       <section class="hero">
         <h1 class="hero-title">APA ITU BALI STARTUP EXPO ??</h1>
         <div class="hero-content">
@@ -107,7 +125,7 @@
           SPONSOR & MEDIA PARTNER
         </h2>
 
-           -->
+
         >
           <div class="rounded-lg bg-zinc-300 h-[173px]"></div>
           <div class="rounded-lg bg-zinc-300 h-[173px]"></div>
@@ -121,15 +139,60 @@
         <button class="contact-button">KONTAK KAMI DISINI</button>
       </section>
     </main>
+    
+    .button {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  border: 2px solid rgb(16, 76, 156);
+  border-radius: 15px;
+  background-color: white;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(16, 76, 156);
+  text-decoration: none;
+}
+
+.button i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(16, 76, 156);
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button:hover i {
+  transform: scale(1.2);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+    <div class="silent-sound" id="silentSoundDiv">
+      <!-- <h1>haii</h1> -->
+      <img src="src/silentsound.png" id="silentIcon" alt="top-button" />
+      <img src="src/" id="unsilentIcon" alt="top-button" />
+    </div>
+  </main>
 
     <!-- Footer -->
     <footer class="footer">
       <div class="social-links">
-        <a href="#" class="social-link">Twitter</a>
-        <a href="#" class="social-link">LinkedIn</a>
-        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Tiktok</a>
+        <a href="#" class="social-link">Whatsup</a>
       </div>
-      <p class="copyright">© 2025 Bali Startup Expo</p>
+      <p class="copyright">© 2025 Bali Startup Expo x Bagastya</p>
     </footer>
   </body>
 </html>
