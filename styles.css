@@ -1,0 +1,226 @@
+/* Base Styles */
+:root {
+  --primary-color: rgb(8, 47, 73);
+  --text-color: white;
+  --accent-color: rgba(255, 255, 255, 0.2);
+  --spacing-small: 1rem;
+  --spacing-medium: 2rem;
+  --spacing-large: 4rem;
+}
+
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-medium);
+  border-bottom: 1px solid var(--text-color);
+}
+
+.logo {
+  position: relative;
+  width: 100px;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.year {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.nav {
+  display: flex;
+  gap: var(--spacing-large);
+  justify-content: center;
+  align-items: center;
+  background : linear-gradient(45deg,#3397B1, #184B76);
+  padding: 10px;
+  margin: 10px;
+  border-color: #ffff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-style: inset;
+  border-color: 0.1px #ffff;
+  
+
+}
+
+.nav-link {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Hero Section */
+.hero {
+  padding: var(--spacing-large);
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-large);
+}
+
+.hero-content {
+  display: flex;
+  gap: var(--spacing-medium);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-image {
+  width: 40%;
+  border-radius: 8px;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: left;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Winners Section */
+.winners {
+  padding: var(--spacing-large);
+  border: 1px bl;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: var(--spacing-large);
+}
+
+.winners-grid {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-medium);
+  padding: var(--spacing-medium);
+}
+
+.winner-card {
+  text-align: center;
+}
+
+.winner-image {
+  width: 200px;
+  height: 250px;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  margin-bottom: var(--spacing-small);
+}
+
+.winner-first .winner-image {
+  height: 300px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: var(--spacing-large);
+}
+
+.contact-button {
+  background-color: transparent;
+  border: 2px solid var(--text-color);
+  color: var(--text-color);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact-button:hover {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: var(--spacing-medium);
+  text-align: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-medium);
+  margin-bottom: var(--spacing-small);
+}
+
+.social-link {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+.social-link:hover {
+  opacity: 0.8;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: var(--spacing-medium);
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .winners-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
